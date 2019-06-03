@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FayUsers</string>
+    <string name="txt_greeting">¡Bienvenido!</string>
+    <string name="txt_name">Nombre</string>
+    <string name="txt_pass">Contraseña</string>
+    <string name="b_log">Iniciar Sesión</string>
+    <string name="b_reg">Registrarse</string>
+    <string name="txt_rregistry">Ingrese sus datos</string>
+    <string name="txt_rname">Nombre</string>
+    <string name="txt_rlastname">Apellidos</string>
+    <string name="txt_remail">E-mail</string>
+    <string name="txt_rpass">Contraseña</string>
+    <string name="rb_female">Femenino</string>
+    <string name="rb_male">Masculino</string>
+    <string name="txt_birthday">Fecha de Nacimiento</string>
+    <string name="b_rregistry">Registrar</string>
+    <string name="b_back">Atrás</string>
+
+</resources>
