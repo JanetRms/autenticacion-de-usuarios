@@ -10,7 +10,7 @@ public class UserSQLite extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase BasedeDatos) {
-        BasedeDatos.execSQL("create table users(id int primary key, name text, lastname text, email text, password text, gender text, birthday text )");
+        BasedeDatos.execSQL("create table users(id int primary key autoincrement, name text, lastname text, email text, password text, gender text, birthday text )");
 
     }
 

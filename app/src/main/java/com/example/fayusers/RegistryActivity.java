@@ -40,22 +40,23 @@ public class RegistryActivity extends AppCompatActivity {
         String rdate=et_birthday.getText().toString();
         String gender="";
 
-
+        //RB saber genero
         if (rb_female.isChecked() == true) {
             gender="Femenino";
         }else if (rb_male.isChecked() ==true) {
             gender="Masculino";
         }
-
+        //validación simple de campos
         if (!rname.isEmpty() && !rlastname.isEmpty() && !rmail.isEmpty() && !rpass.isEmpty() && !rdate.isEmpty()){
             ContentValues registry = new ContentValues();
+            //Si son distintos de vacío, realiza el registro
             registry.put("name",rname);
             registry.put("lastname",rlastname);
             registry.put("email",rmail);
             registry.put("password",rpass);
             registry.put("gender", gender);
             registry.put("birthday", rdate);
-
+            //inserta y cierra
             Base.insert("users", null, registry);
             Base.close();
 
@@ -68,7 +69,6 @@ public class RegistryActivity extends AppCompatActivity {
             et_birthday.setText("");
 
         } else {
-            Toast.makeText(this, rname +rlastname+ rmail+ rpass+ gender+rdate, Toast.LENGTH_LONG).show();
             Toast.makeText(this,"Debes llenar todos los campos", Toast.LENGTH_LONG).show();
         }
 
